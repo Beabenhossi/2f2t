@@ -20,3 +20,20 @@
     width: 100%;
 
 }
+@media screen and (min-width: 768px){
+    .menu{
+        height: 100px;
+        background-color: rgb(129, 241, 129);
+    }
+    .conteudo-home {
+        display: flex;
+        
+    }
+}
+@media screen and (min-width: 1280px){
+    .menu{
+        height: 100px;
+        background-color: rgb(35, 155, 35);
+    }
+    
+}
