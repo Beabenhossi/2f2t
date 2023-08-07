@@ -151,9 +151,9 @@ ul{
 
 div[class^="item-"]{
     background-color: rgb(75, 75, 209);
-    width: 100vw;
     height: 200px;
     margin-top: 5px;
+    grid-area: "info";
 }
 .info{
     display: grid;
