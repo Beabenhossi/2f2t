@@ -117,9 +117,13 @@ ul{
 }
 .conteudo{
     width: 100vw;
-    padding: 7px;
+    display: grid;
 }
+.definicao {
+    display: block;
+    width: 100vw;
 
+}
 #droga {
     display: none;
 }
@@ -139,16 +143,20 @@ ul{
     background-color: rgb(197, 175, 212);
 }
 
-.conteudo {
-    background-color: rgb(186, 186, 240);
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "geral geral";
-}
 
 .geral {
     width: 100vw;
     grid-area: "geral";
+}
+
+div[class^="item-"]{
+    background-color: rgb(75, 75, 209);
+    width: 100vw;
+    height: 200px;
+    margin-top: 5px;
+}
+.info{
+    display: grid;
 }
 
 @media (min-width: 820px) {
@@ -177,35 +185,25 @@ ul{
         width: 15vh;
         margin: 5px;
     }
-    .conteudo {
-        grid-template-columns: 50% 50%;
-        grid-template-areas: 
-         "geral geral";
-    }
-    .conteudo {
-        display: flex;
-        width: 100vw;
 
-    }
     .geral {
-        height: 100%;
+        width: 70vw;
         padding: 5px;
-        width: 10vw;
 
     }
 
     .item1 {
         display: block;
-        text-align: end;
-        height: 30vh;
-        width: 30vw;
+    
     }
     #drogas {
         display: block;
         width: 50%;
     }
-    
-
+    .info{
+        grid-template-columns: 50% 50%;
+        grid-area: "item" "item";
+    }
 }
 
 @media (min-width: 1024px) {
@@ -234,10 +232,9 @@ ul{
         width: 15vh;
         margin: 5px;
     }
-    .conteudo {
+    .info{
         grid-template-columns: 33% 34% 33%;
-        grid-template-areas: 
-         "geral geral geral";
+        grid-area: "item" "item" "item";
     }
-
+  
 }
