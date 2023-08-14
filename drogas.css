@@ -4,6 +4,7 @@
     --white: #f9f9f9;
     --black: #1f1f21;
     --gray: #877979;
+    
 } /* variables*/
 
 /* Reset */
@@ -29,7 +30,7 @@ ul{
     box-shadow: 1px 1px 5px 0px var(--gray);
     position: sticky;
     top: 0;
-    width: 100%;
+    width: calc(100vw - 8px);
 }
 /* Logo */
 .logo{
@@ -137,7 +138,7 @@ ul{
     width: 100vw;
     text-align: center;
     color: #110f0f;
-    background-color: rgb(197, 175, 212);
+    background-color: rgb(172, 132, 199);
 }
 
 .geral {
@@ -146,7 +147,7 @@ ul{
 }
 
 div[class^="item-"]{
-    background-color: pink;
+    background-color: rgb(243, 180, 191);
     height: 200px;
     margin: 5px;
     grid-area: "info";
@@ -190,8 +191,10 @@ div[class^="item-"]{
         display: block;
     }
     .info {
+        width: calc(100vw - 10px);
         grid-template-columns: 50% 50%;
         grid-area: "info" "info";
+
     }
     .definicao {
         flex-direction: row;
