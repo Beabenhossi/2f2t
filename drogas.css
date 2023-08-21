@@ -149,9 +149,23 @@ ul{
 div[class^="item-"]{
     background-color: rgb(243, 180, 191);
     height: 200px;
-    margin: 5px;
+    margin: 3px;
     grid-area: "info";
 }
+
+.item-2 {
+    text-align: center;
+}
+
+.item-4 {
+    text-align: center;
+}
+
+.item-6 {
+    text-align: center;
+    
+}
+
 .info {
     display: grid;
 }
